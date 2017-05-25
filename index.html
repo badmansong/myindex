@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jerry's portfolio</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- css -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<nav>
+				<div class="navbar container clearfix">
+					<div id="logo">SUNG</div>
+						<div class="hamberger">
+						   <span></span>
+						   <span></span>
+						   <span></span>
+						</div>
+						<ul id="menuBar">
+							<li><a class="TAG" href="#useSkill">技能</a></li>
+							<li><a class="TAG" href="#work">作品集</a></li>
+							<li><a class="TAG" href="#contact">聯絡我</a></li>
+							<li><a href="javascript:void(0);">其他作品</a>
+								<ul id="secendUl">
+								<li><a href="#">bootstrap</a></li>
+								<li><a href="#">codepen</a></li>
+								</ul>
+							</li>
+						</ul>
+				</div>
+			</nav>
+			<div id="slogan"><h1>Jerry's portfolio</h1></div>
+			<span id="arrow"><a href="javascript:void(0);">V</a></span>
+		</header>
+		<div id="useSkill">
+			<div class="container clearfix">
+			<h2 class="title">技能熟練度</h2>
+			<ul>
+				<li>
+					<h3>Javascript</h3>
+					<div class="progressBar"><div data-w="70"></div></div>
+				</li>
+				<li>
+					<h3>Jquery</h3>
+					<div class="progressBar"><div data-w="75"></div></div>
+				</li>
+				<li>
+					<h3>Ajax</h3>
+					<div class="progressBar"><div data-w="70"></div></div>
+				</li>
+				<li>
+					<h3>Bootstrap</h3>
+					<div class="progressBar"><div data-w="75"></div></div>
+				</li>
+				<li>
+					<h3>PHP</h3>
+					<div class="progressBar"><div data-w="60"></div></div>
+				</li>
+				<li>
+					<h3>MySQL</h3>
+					<div class="progressBar"><div data-w="25"></div></div>
+				</li>
+			</ul>
+			</div>
+		</div>
+		<div id="work">
+			<div class="container clearfix">
+			<h2 class="title">作品集</h2>
+				<ul>
+					<li><a href="../hw/index.html" data-info="PSD檔手刻實作餐廳網站"><img src="images/sixroom.png"></a></li>
+					<li><a href="../randomUser/index.html" data-info="RandomUserApi"><img src="images/userApi.png"></li>
+					<li><a href="../todolist/index.html" data-info="使用localStorange的備忘錄"><img src="images/todolist.png"> </a></li>
+					<li><a href="../BMI/index.html" data-info="BMI紀錄器"><img src="images/bmi.png"> </a></li>
+				</ul>
+			</div>
+		</div>
+		<footer id="contact">
+			<div class="container">
+				<form action="contact.php" method="post">
+					<fieldset>
+						<legend>與我聯繫</legend>
+						<p>你的姓名</p><input type="text" name="name" placeholder="姓名" required>
+						<p>你的信箱</p><input type="email" name="email" placeholder="信箱" required>
+						<p>主旨</p><input type="text" name="subject" placeholder="主旨" required>
+						<p>內容</p><textarea name="body" cols="30" rows="10" placeholder="內容" required></textarea><br>
+						<input type="submit" value="提出">
+					</fieldset>
+				</form>
+				<h6> <script>document.write(new Date().getFullYear())</script>©Written and coded by JerryLi.</h6>
+			</div>
+		</footer>
+		<div class="totop fa fa-arrow-up">
+		    <h5>TOP</h5>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
